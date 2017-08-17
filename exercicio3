@@ -1,0 +1,27 @@
+class Disc():
+    def __init__(self,n_disci,c_hor,l_aluno,d_semana):
+        self.n_disci = n_disci
+        self.c_hor = c_hor
+        self.l_aluno = l_aluno
+        self.d_semana = d_semana
+    def __str__(self):
+        return "nome disciplina:"+str(self.n_disci)+"\n"+"CH:"+str(self.c_hor)+"\n"+"aluno:"+str(self.l_aluno)+"\n"+"semana:"+str(d_semana)
+
+    def Inserir_dia(self):
+        for x in (1,3):
+            novodia = input("insira um novo dia na semana:")
+            l= self.d_semana
+            self.d_semana+=l
+        print("dias:",self.d_semana)
+
+
+n_disci= input("nome disciplina:")
+c_hor=float(input("carga horária:"))
+l_aluno=input("alunos:")
+d_semana=input("dias:")
+
+
+Disciplina=Disc(n_disci,c_hor,l_aluno,d_semana)
+
+Disciplina.Inserir_dia()
+print(Disciplina)
